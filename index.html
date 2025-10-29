@@ -1,57 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external CSS file -->
+  </head>
+  <body>
+    <header>
+      <h1>Meet Our Team</h1>
+      <!-- Example team logo -->
+      <img src="img/team-logo.png" alt="Team Logo" class="team-logo" />
 
-<header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
-
-    <!-- Navigation menu to switch between sections -->
-    <nav>
+      <!-- Navigation menu to switch between sections -->
+      <nav>
         <button onclick="showSection('bios')">Team Bios</button>
         <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Team bios section (default section) -->
-<div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card">
+    <!-- Team bios section (default section) -->
+    <div id="bios" class="container">
+      <!-- Each card represents an individual team member -->
+      <div class="card">
         <h2>Kyle Burchett</h2>
-        <img src="img/kyle.jpg" class="team-logo">
+        <img src="img/kyle.jpg" class="team-logo" />
         <p>Aspiring Software Engineer</p>
         <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">Kyle is an experienced developer with experience rooting back from high school where he started with programming robots on a first robotics team. And now works towards a bachelor's in computer science.</p>
-    </div>
-    <div class="card">
-        <img src="img/jamiepic.jpg" alt="Jamison Bedell" class="profile-pic">
+        <p id="bio1" class="bio">
+          Kyle is an experienced developer with experience rooting back from
+          high school where he started with programming robots on a first
+          robotics team. And now works towards a bachelor's in computer science.
+        </p>
+      </div>
+      <div class="card">
+        <img src="img/jamiepic.jpg" alt="Jamison Bedell" class="profile-pic" />
         <h2>Jamison Bedell</h2>
         <p>Scrum Master</p>
         <button onclick="toggleBio('bio4')">Show Bio</button>
         <p id="bio4" class="bio">
-            Jamison is a cybersecurity student or something, I heard he's a pretty cool guy — check him out <a href="https://outsidecoat.github.io/" target="_blank" rel="noopener">here</a>.
-            <br>
-            <strong>Inspiration:</strong>
-            <br>
-            <img src="img/jamieinspo.jpg" alt="Jamison's inspiration" class="inspo-img">
+          Jamison is a cybersecurity student or something, I heard he's a pretty
+          cool guy — check him out
+          <a
+            href="https://outsidecoat.github.io/"
+            target="_blank"
+            rel="noopener"
+            >here</a
+          >.
+          <br />
+          <strong>Inspiration:</strong>
+          <br />
+          <img
+            src="img/jamieinspo.jpg"
+            alt="Jamison's inspiration"
+            class="inspo-img"
+          />
         </p>
+      </div>
     </div>
-</div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
-<div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
-</div>
+    <!-- Team vision/mission statement section (hidden by default) -->
+    <div id="vision" class="container" style="display: none">
+      <h2>Our Mission Statement</h2>
+      <p>
+        We strive to create a collaborative, inclusive, and innovative
+        environment where team members feel empowered to push boundaries and
+        achieve excellence in their craft. Our mission is to deliver
+        high-quality solutions that meet and exceed our clients' expectations.
+      </p>
+    </div>
 
-<script src="script.js"></script> <!-- Link to external JavaScript file -->
-
-</body>
+    <script src="script.js"></script>
+    <!-- Link to external JavaScript file -->
+  </body>
 </html>
